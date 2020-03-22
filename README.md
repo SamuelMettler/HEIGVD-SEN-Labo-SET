@@ -54,10 +54,19 @@ Vous découvrirez l'un des outils les plus couramment utilisés par les ingénie
 
 Pour le collecteur d'identifiants, montrez que vous avez cloné un site en indiquant son adresse web et l'interface d'utilisateur. Saisissez les informations d'identification sur votre clone local, puis cliquez le bouton de connexion. Essayez plusieurs sites comme facebook.com, twitter.com, et d'autres qui puissent vous intéresser. Faites des captures d'écran des mots de passe collectés dans vos tests avec SET.
 
+J'ai testé avec le site facebook : 
+
+![fake website](images/fake_facebook.png)
+
+On peut voir sur le coté l'email et le mot de passe entré.
+
 # Exercice 2 - Créer une attaque de phishing
 
 Essayez la fonction d'attaque par phishing. C'est très facile à faire. Vous pouvez vous référer à ce lien pour plus d'informations http://www.computerweekly.com/tutorial/Social-Engineer-Toolkit-SET-tutorial-for-penetration-testers
 
+Voici l'email que je me suis envoyé : 
+
+![fake email](images/mail_reussi.png)
 
 # Exercice 3 - Explorer les liens "Phishy" et le courrier électronique "Phishy"
 
@@ -79,5 +88,26 @@ Vous avez la liberté de reproduire et d'utiliser le matériel grace à sa licen
 Pour cette tâche, prenez des captures d'écran de :
 
 - Vos inspections de chaque lien dans votre navigateur
+
+Voici toutes les pages que j'ai consulté : 
+
+![URL analysis](page_url_analysis.png)  
+
+![URL obfuscation](page_url_obf.png)  
+
+![email fishing](page_email.png)  
+
+J'ai d'ailleurs conseillé à ma famille de regarder ces liens pour ne pas avoir à me demander à chaque fois si les emails qu'ils recevaient étaient légitimes et éviter qu'ils cliquent n'importe où.
+
+
 - Vos inspections d'un en-tête de courrier électronique à partir de votre propre boîte de réception
 
+
+J'ai décidé de comparer 2 entêtes d'email : un légitime vs un que j'ai envoyé moi avec le toolkit :
+Toolkit : 
+![Email fake](analyseheader.png)
+
+Légitime :
+![Email réel](analyse_real_header.png)
+
+On peut voir que l'email légitime a beaucoup plus d'étape que celui qu'on a forgé nous crée nous même ! 
