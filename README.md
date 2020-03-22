@@ -91,11 +91,11 @@ Pour cette tâche, prenez des captures d'écran de :
 
 Voici toutes les pages que j'ai consulté : 
 
-![URL analysis](page_url_analysis.png)  
+![URL analysis](images/page_url_analysis.png)  
 
-![URL obfuscation](page_url_obf.png)  
+![URL obfuscation](images/page_url_obf.png)  
 
-![email fishing](page_email.png)  
+![email fishing](images/page_email.png)  
 
 J'ai d'ailleurs conseillé à ma famille de regarder ces liens pour ne pas avoir à me demander à chaque fois si les emails qu'ils recevaient étaient légitimes et éviter qu'ils cliquent n'importe où.
 
@@ -105,9 +105,9 @@ J'ai d'ailleurs conseillé à ma famille de regarder ces liens pour ne pas avoir
 
 J'ai décidé de comparer 2 entêtes d'email : un légitime vs un que j'ai envoyé moi avec le toolkit :
 Toolkit : 
-![Email fake](analyseheader.png)
+![Email fake](images/analyseheader.png)
 
 Légitime :
-![Email réel](analyse_real_header.png)
+![Email réel](images/analyse_real_header.png)
 
 On peut voir que l'email légitime a beaucoup plus d'étape que celui qu'on a forgé nous crée nous même ! 
