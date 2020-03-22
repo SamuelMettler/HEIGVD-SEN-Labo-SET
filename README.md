@@ -89,19 +89,48 @@ Pour cette tâche, prenez des captures d'écran de :
 
 - Vos inspections de chaque lien dans votre navigateur
 
-Voici toutes les pages que j'ai consulté : 
+Lien 1 : redirige vers www.google.com comme peut l'afficher google chrome (en bas à gauche)
 
-![URL analysis](images/page_url_analysis.png)  
+![Lien 1](images/Link1.png)
 
-![URL obfuscation](images/page_url_obf.png)  
+Lien 2 : même chose que le lien 1, on peut voir au survolage que le lien écrit et le lien réel n'est pas le même, il y a '%shy' en plus qui est quelques choses que le navigateur n'affiche pas.
 
-![email fishing](images/page_email.png)  
+![Lien 2](images/Link2.png)
 
-J'ai d'ailleurs conseillé à ma famille de regarder ces liens pour ne pas avoir à me demander à chaque fois si les emails qu'ils recevaient étaient légitimes et éviter qu'ils cliquent n'importe où.
+Lien 3 : cette fois on affiche pas le vrai lien mais on affiche une phrase à la place, il faut encore une fois regarder la pop up chrome pour savoir où on se rend avant de cliquer.
+
+![Lien 3](images/Link3.png)
+
+Lien 4 : on peut reconnaitre dans le lien la forme login:password@website. Certain site permet de se loger de cette manière mais pas tous.
+
+![Lien 4](images/Link4.png)
+
+Lien 5 : Cette fois on utilise des URL shortener qui permettent de "racourcir" une URL comme leur nom l'indique. Cela peut empêche d'utiliser la prévisualisation de chrome car on a pas l'affichage de la destination.
+
+![Lien 5](images/Link5.png)
+
+Lien 6 : Même chose que le lien 5 sauf que cette fois on observe que le lien réel (affiché par chrome en bas) est différent ! Il faut donc faire attention même en utilisant des outils permettant de savoir quel est la cible du short link
+
+![Lien 6](images/Link6.png)
+
+Lien 7 : Ce lien est un peu embêtant car on a même pas besoin de cliquer dessus pour s'y rendre. Il suffit de passer la souris dessus pour se rendre sur le site cible ! Attention donc à bien penser a désactiver javascript sur des pages suspectes.
+
+![Lien 7](images/Link7.png)
+
+Lien 8 : A prioris en inspectant la source rien ne semble louche. En cliquant on s'apercoit qu'on est envoyé vers `http://xn--thn-5cdop7dtb.xn--m-0tbi/` qui n'a a prioris rien n'a voir. Il s'agit en faite de caractère russe utilisé. 
+
+![Lien 8](images/Link8.png)
+
+Lien 9 et 10 : On peut voir que ces liens (après s'être rendu sur la page) sont des `renders` du contenu de l'URL dans une page HTML : c'est à dire que le contenu de l'URL est interprété est mise en forme dans le navigateur. 
+
+![Lien 9 & 10](images/Link9.png)
+
+Lien 11 : On essaie de piéger l'utilisateur en pensant envoyer vers `yahoo.com` (titre du lien) alors qu'on redirige vers `google.com`
+
+![Lien 11](images/Link11.png)
 
 
 - Vos inspections d'un en-tête de courrier électronique à partir de votre propre boîte de réception
-
 
 J'ai décidé de comparer 2 entêtes d'email : un légitime vs un que j'ai envoyé moi avec le toolkit :
 Toolkit : 
